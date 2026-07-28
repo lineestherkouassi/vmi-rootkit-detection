@@ -82,23 +82,6 @@ Détection des malwares et rootkits
 
 ---
 
-# Structure du projet
-
-```text
-CloudGuard/
-│
-├── introspection/
-├── volatility/
-├── feature_extraction/
-├── ml_module/
-├── dataset/
-├── documentation/
-├── experiments/
-└── README.md
-```
-
----
-
 # Contributions
 
 - Détection de malwares sans agent grâce à la Virtual Machine Introspection.
