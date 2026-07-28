@@ -105,6 +105,15 @@ Les expérimentations mettent en évidence les performances du modèle **One-Cla
 Ce projet a été réalisé dans le cadre d'un **Projet de Fin d'Études (PFE)** en cybersécurité. Il porte sur la conception d'un framework intelligent de détection des malwares et des rootkits dans les environnements cloud virtualisés à l'aide de la Virtual Machine Introspection et de l'apprentissage automatique.
 
 ---
+##  Accès au projet
+
+En raison de la taille importante des fichiers (jeux de données et autres ressources), l'intégralité du projet ne peut pas être hébergée sur GitHub.
+
+Le projet complet est disponible via le lien Google Drive suivant :
+
+🔗 **Google Drive :**https://drive.google.com/file/d/1YtvXIY7MbiqAnPojpqUXbDOOODAuBZbU/view?usp=sharing
+
+Le dépôt GitHub contient la documentation.
 
 # Auteur
 
