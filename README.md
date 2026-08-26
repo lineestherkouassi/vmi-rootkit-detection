@@ -14,16 +14,10 @@ This repository accompanies a Master's thesis in Computer Security and Web Techn
 * [How It Works](#how-it-works)
 * [Features](#features)
 * [Requirements](#requirements)
-* [Installation](#installation)
-* [Usage](#usage)
 * [Extracted Features](#extracted-features)
 * [Results](#results)
-* [Limitations](#limitations)
-* [Roadmap](#roadmap)
-* [Repository Layout](#repository-layout)
-* [Citation](#citation)
 * [References](#references)
-* [License](#license)
+* [Citation](#citation)
 * [Acknowledgments](#acknowledgments)
 
 ## Responsible Use
@@ -144,19 +138,16 @@ The training corpus contained 214 unlabeled observations with a controlled conta
 
 With 29 positive observations in the test set, the Recall has a 95% Wilson confidence interval of approximately **[82.8%; 99.4%]**. The zero false-positive rate has a 95% confidence interval of **[0%; 6.9%]**. It was measured on a clean corpus with limited software diversity and should therefore not be interpreted as a production-level figure.
 
-Isolation Forest reaches an AUC of 1.000, indicating that a perfectly separating threshold exists for the evaluated data. One-Class SVM was retained because of the stability of its calibrated threshold across splits, rather than because of superior separating power.
-
-A kernel driver absent from the training corpus—a signed vulnerable driver used in a Bring Your Own Vulnerable Driver (BYOVD) scenario—was correctly flagged. This is a single observation and does not constitute statistical evidence of generalization.
+All three models reach a zero false positive rate. One-Class SVM was retained for its higher recall at the calibrated threshold (97.93 % against 95.86 % for Isolation Forest) and for its lower variance across splits. Isolation Forest reaches an AUC of 1.000, meaning a perfectly separating threshold exists for it that the calibration procedure does not select.
 
 ## References
 
 * Wang, X., Zhang, J., Zhang, A., & Ren, J. (2019). *TKRD: Trusted kernel rootkit detection for cybersecurity of VMs based on machine learning and memory forensic analysis*. Mathematical Biosciences and Engineering, 16(4), 2650–2667. DOI: 10.3934/mbe.2019132.
 * Zhang, T., & Lee, R. B. *CloudMonatt: An Architecture for Security Health Monitoring and Attestation of Virtual Machines in Cloud Computing*.
 * Ligh, M. H., Case, A., Levy, J., & Walters, A. (2014). *The Art of Memory Forensics*. Wiley.
-* Schölkopf, B., et al. (2001). *Estimating the Support of a High-Dimensional Distribution*. Neural Computation, 13(7).
 * Volatility 3 — Memory forensics framework.
 * OpenStack — Cloud infrastructure platform.
-* LibVMI — Virtual machine introspection library.
+
 
 ## Citation
 
